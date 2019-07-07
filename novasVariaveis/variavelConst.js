@@ -13,7 +13,6 @@ const will = {
 }
 
 //congelando o objeto para nao ser mudado
-
     Object.freeze(will);
 
     will.age = 26;
