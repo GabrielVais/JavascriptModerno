@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head> 
+        
+        <title> Arrow functions This</title>
+    
+    </head>
+
+    <body>
+
+        <button id="btn">Make my sandwich!</button>
+
+    </body>
+
+    <script>
+
+        const sandwich ={
+
+            bread: 'white',
+            cheese: 'cheddar',
+
+            prepare: function(){
+
+                return `I want a sandwich ${this.bread} bread and ${this.cheese}`
+
+            },
+
+            make: function(){
+
+                //atribuindo o valor that a this;   
+                //var that = this;
+
+                //com arrow functon nao é necessario
+                window.setTimeout(()=>{
+    
+                    console.log(this.prepare());
+                }, 500)
+
+            }
+
+
+        };
+
+        const btn = document.getElementById('btn');
+
+
+        btn.addEventListener('click', function() {sandwich.make()});
+
+
+
+        </script>
+   
+
+
+
+
+
+
+
+</html>
+
+    
