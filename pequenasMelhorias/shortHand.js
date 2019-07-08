@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-
-<html>
-
-    <title> ShortHand Properties </title>
-
-</html>
-
-
-<script>
 
     let firstName = 'Willian';
 
@@ -22,12 +12,20 @@
 
         surname,
 
-        age
+        age,
+
+    
+
+        hello(){
+
+            console.log('Hello');
+
+        }
 
 
     };
 
     console.log(person);
 
+    person.hello();
 
-</script>
