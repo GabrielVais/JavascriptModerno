@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head> 
+        
+        <title> Arrow functions This</title>
+    
+    </head>
+
+    <body>
+    </body>
+
+    <script>
+
+        var posts = fetch('https://willianjusten.com.br/search.json');
+
+        setTimeout(() =>{
+
+
+        console.log(posts);
+
+
+    }, 3000);
+
+    //faça alguma coisa = then
+    posts
+    .then(data => data.json())
+    .then(data => data.map(post =>{
+
+        console.log(post.title);
+
+        //jogando um error
+
+        //trhow new Error('deu erro');
+
+    }))
+    .catch(err =>{
+
+        console.error(error)
+    })
+        
+
+        </script>
+
+ </html>

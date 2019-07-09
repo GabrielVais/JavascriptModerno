@@ -12,10 +12,7 @@ var data ={
     }
 
 };
-
 //destruting permite pegar nome de elementos e variaveis a partir de objetos
-
-
 const{name, surname} = data;
 
 console.log(name);

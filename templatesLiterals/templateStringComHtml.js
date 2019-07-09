@@ -36,7 +36,7 @@ const markup =`
                     
                 ${tag}
 
-                </li>`).join('')
+                </li>`.join('')
 
                 }) 
             }
